@@ -5,7 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="style.css" rel="stylesheet">
 <title>Курсовая</title>
-
+</head>
+	
+<body>
+	<center>			
+		<p  id="time">Затрачено времени: 0 сек</p>
+		<p style="font-size: 38px;font-weight: bold;padding-top: 2px;" id="result"></p>
+					
+		<p style="font-size: 38px;font-weight: bold;padding-top: 2px;" id="question"></p>
+		
+		<button onclick="check(1)" class='buttons' id="option1"></button>
+		
+		<button onclick="check(2)" class='buttons' id="option2"></button>
+		
+		<button onclick="check(3)" class='buttons' id="option3"></button>
+		
+		<button onclick="check(4)" class='buttons' id="option4"></button>
+	</center><br>
+	<center>
+		<button id="start" class="buttons" onclick="check(0)">Приступить к тесту</button>
+		<script type="text/javascript"> var curent_url = document.URL; document.write("<a id='end' style='display: none;' class='buttons' href='" + curent_url + "'>Начать сначала</a>"); </script>	
+	</center><br><br>
+		
+</body>
 <script type="text/javascript">
 	 //функция, которая перемешивает массив
 	 function mix(mixArray) {
@@ -100,26 +122,5 @@ mix(data_array); //перемешиваем массив
 		}
 	}
 </script>
-</head>
-<body>
-	<center>			
-		<p  id="time">Затрачено времени: 0 сек</p>
-		<p style="font-size: 38px;font-weight: bold;padding-top: 2px;" id="result"></p>
-					
-		<p style="font-size: 38px;font-weight: bold;padding-top: 2px;" id="question"></p>
-		
-		<button onclick="check(1)" class='buttons' id="option1"></button>
-		
-		<button onclick="check(2)" class='buttons' id="option2"></button>
-		
-		<button onclick="check(3)" class='buttons' id="option3"></button>
-		
-		<button onclick="check(4)" class='buttons' id="option4"></button>
-	</center><br>
-	<center>
-		<button id="start" class="buttons" onclick="check(0)">Приступить к тесту</button>
-		<script type="text/javascript"> var curent_url = document.URL; document.write("<a id='end' style='display: none;' class='buttons' href='" + curent_url + "'>Начать сначала</a>"); </script>	
-	</center><br><br>
-		
-</body>
+
 </html>
