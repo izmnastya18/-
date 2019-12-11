@@ -72,6 +72,7 @@ mix(dataArray); //перемешиваем массив
                 for(let i=0; i<options.length; i++){
                     options[i].style.display='none';
                 }
+				document.getElementById('question').style.display='none';
 				document.getElementById('end').style.display='inline';
 				
 				let percent =  Math.round(count/countAnswer*100);				
