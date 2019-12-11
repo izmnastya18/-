@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+<title>Курсовая</title>
+</head>
+<body>		
+		<p  id="time">Затрачено времени: 0 сек</p>
+		<p id="result"></p>
+					
+		<p id="question"></p>
+		
+		<button onclick="check(1)" class='buttons' id="option1"></button>
+		
+		<button onclick="check(2)" class='buttons' id="option2"></button>
+		
+		<button onclick="check(3)" class='buttons' id="option3"></button>
+		
+		<button onclick="check(4)" class='buttons' id="option4"></button>
+
+		<button id="start" class="buttons" onclick="check(0)">Приступить к тесту</button>
+
+		<script type="text/javascript"> let curent_url = document.URL; document.write("<a id='end' style='display: none;' class='buttons' href='" + curent_url + "'>Начать сначала</a>");</script>
+		
+</body>
+<script src="main.js"></script>
+
+
+</html>
